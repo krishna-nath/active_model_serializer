@@ -1,0 +1,718 @@
+I, [2016-12-06T14:58:34.889931 #10814]  INFO -- : Refreshing Gem list
+I, [2016-12-06T14:58:35.330319 #10814]  INFO -- : listening on addr=/home/krishna/active-model-serializers-example-master/shared/sockets/unicorn.sock fd=9
+I, [2016-12-06T14:58:35.330439 #10814]  INFO -- : worker=0 spawning...
+I, [2016-12-06T14:58:35.331346 #10814]  INFO -- : worker=1 spawning...
+I, [2016-12-06T14:58:35.331695 #10817]  INFO -- : worker=0 spawned pid=10817
+I, [2016-12-06T14:58:35.331791 #10817]  INFO -- : worker=0 ready
+I, [2016-12-06T14:58:35.332223 #10814]  INFO -- : master process ready
+I, [2016-12-06T14:58:35.332593 #10820]  INFO -- : worker=1 spawned pid=10820
+I, [2016-12-06T14:58:35.332698 #10820]  INFO -- : worker=1 ready
+I, [2016-12-06T14:58:50.312331 #10814]  INFO -- : reaped #<Process::Status: pid 10817 exit 0> worker=0
+I, [2016-12-06T14:58:50.312431 #10814]  INFO -- : reaped #<Process::Status: pid 10820 exit 0> worker=1
+I, [2016-12-06T14:58:50.312511 #10814]  INFO -- : master complete
+I, [2016-12-06T15:08:14.818420 #11117]  INFO -- : Refreshing Gem list
+I, [2016-12-06T15:08:15.219613 #11117]  INFO -- : unlinking existing socket=/home/krishna/active-model-serializers-example-master/shared/sockets/unicorn.sock
+I, [2016-12-06T15:08:15.219728 #11117]  INFO -- : listening on addr=/home/krishna/active-model-serializers-example-master/shared/sockets/unicorn.sock fd=9
+I, [2016-12-06T15:08:15.219790 #11117]  INFO -- : worker=0 spawning...
+I, [2016-12-06T15:08:15.220647 #11117]  INFO -- : worker=1 spawning...
+I, [2016-12-06T15:08:15.220971 #11120]  INFO -- : worker=0 spawned pid=11120
+I, [2016-12-06T15:08:15.221068 #11120]  INFO -- : worker=0 ready
+I, [2016-12-06T15:08:15.221550 #11117]  INFO -- : master process ready
+I, [2016-12-06T15:08:15.221862 #11123]  INFO -- : worker=1 spawned pid=11123
+I, [2016-12-06T15:08:15.221954 #11123]  INFO -- : worker=1 ready
+10.9.8.149 - - [06/Dec/2016 15:08:18] "POST /users HTTP/1.0" 200 - 0.2695
+10.9.8.89 - - [06/Dec/2016 15:40:37] "GET / HTTP/1.0" 200 - 0.1954
+I, [2016-12-06T18:14:31.570745 #11117]  INFO -- : reaped #<Process::Status: pid 11120 exit 0> worker=0
+I, [2016-12-06T18:14:31.570832 #11117]  INFO -- : reaped #<Process::Status: pid 11123 exit 0> worker=1
+I, [2016-12-06T18:14:31.570870 #11117]  INFO -- : master complete
+I, [2016-12-07T09:00:40.837108 #2495]  INFO -- : Refreshing Gem list
+I, [2016-12-07T09:00:43.545305 #2495]  INFO -- : unlinking existing socket=/home/krishna/active-model-serializers-example-master/shared/sockets/unicorn.sock
+I, [2016-12-07T09:00:43.545426 #2495]  INFO -- : listening on addr=/home/krishna/active-model-serializers-example-master/shared/sockets/unicorn.sock fd=11
+I, [2016-12-07T09:00:43.545496 #2495]  INFO -- : worker=0 spawning...
+I, [2016-12-07T09:00:43.546363 #2495]  INFO -- : worker=1 spawning...
+I, [2016-12-07T09:00:43.546741 #2516]  INFO -- : worker=0 spawned pid=2516
+I, [2016-12-07T09:00:43.546955 #2516]  INFO -- : worker=0 ready
+I, [2016-12-07T09:00:43.547210 #2495]  INFO -- : master process ready
+I, [2016-12-07T09:00:43.547652 #2519]  INFO -- : worker=1 spawned pid=2519
+I, [2016-12-07T09:00:43.547741 #2519]  INFO -- : worker=1 ready
+10.9.8.149 - - [07/Dec/2016 11:49:29] "GET / HTTP/1.0" 200 - 0.2033
+10.9.8.149 - - [07/Dec/2016 11:49:48] "POST /users HTTP/1.0" 200 - 0.2729
+10.9.8.149 - - [07/Dec/2016 11:54:41] "GET /rails/info/properties HTTP/1.0" 200 - 0.1832
+10.9.8.149 - - [07/Dec/2016 12:32:25] "POST /users HTTP/1.0" 200 - 0.1459
+I, [2016-12-07T17:41:57.176485 #13279]  INFO -- : Refreshing Gem list
+F, [2016-12-07T17:41:57.592996 #13279] FATAL -- : error adding listener addr=/home/krishna/server/active-model-serializers-example-master/releases/20161207111159/active-model-serializers-example-master/shared/sockets/unicorn.sock
+/home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `initialize': too long unix socket path (152bytes given but 108bytes max) (ArgumentError)
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `new'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `bind_listen'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:231:in `listen'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `block in bind_new_listeners!'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `each'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `bind_new_listeners!'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:130:in `start'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+I, [2016-12-08T09:25:46.645314 #4210]  INFO -- : Refreshing Gem list
+config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+
+  * development - set it to false
+  * test - set it to false (unless you use a tool that preloads your test environment)
+  * production - set it to true
+
+F, [2016-12-08T09:25:47.074980 #4210] FATAL -- : error adding listener addr=/home/krishna/server/active-model-serializers-example-master/releases/20161207111159/active-model-serializers-example-master/shared/sockets/unicorn.sock
+/home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `initialize': too long unix socket path (152bytes given but 108bytes max) (ArgumentError)
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `new'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `bind_listen'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:231:in `listen'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `block in bind_new_listeners!'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `each'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `bind_new_listeners!'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:130:in `start'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+I, [2016-12-08T09:26:01.484456 #4290]  INFO -- : Refreshing Gem list
+config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+
+  * development - set it to false
+  * test - set it to false (unless you use a tool that preloads your test environment)
+  * production - set it to true
+
+F, [2016-12-08T09:26:01.897886 #4290] FATAL -- : error adding listener addr=/home/krishna/server/active-model-serializers-example-master/releases/20161207111159/active-model-serializers-example-master/shared/sockets/unicorn.sock
+/home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `initialize': too long unix socket path (152bytes given but 108bytes max) (ArgumentError)
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `new'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `bind_listen'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:231:in `listen'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `block in bind_new_listeners!'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `each'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `bind_new_listeners!'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:130:in `start'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+I, [2016-12-08T09:45:44.192515 #5259]  INFO -- : Refreshing Gem list
+config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+
+  * development - set it to false
+  * test - set it to false (unless you use a tool that preloads your test environment)
+  * production - set it to true
+
+F, [2016-12-08T09:45:44.611818 #5259] FATAL -- : error adding listener addr=/home/krishna/server/active-model-serializers-example-master/releases/20161207111159/active-model-serializers-example-master/shared/sockets/unicorn.sock
+/home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `initialize': too long unix socket path (152bytes given but 108bytes max) (ArgumentError)
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `new'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `bind_listen'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:231:in `listen'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `block in bind_new_listeners!'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `each'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `bind_new_listeners!'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:130:in `start'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+I, [2016-12-08T09:53:33.847489 #5537]  INFO -- : Refreshing Gem list
+config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+
+  * development - set it to false
+  * test - set it to false (unless you use a tool that preloads your test environment)
+  * production - set it to true
+
+F, [2016-12-08T09:53:34.268610 #5537] FATAL -- : error adding listener addr=/home/krishna/server/active-model-serializers-example-master/releases/20161207111159/active-model-serializers-example-master/shared/sockets/unicorn.sock
+/home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `initialize': too long unix socket path (152bytes given but 108bytes max) (ArgumentError)
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `new'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `bind_listen'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:231:in `listen'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `block in bind_new_listeners!'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `each'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `bind_new_listeners!'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:130:in `start'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+I, [2016-12-08T09:59:09.183356 #5934]  INFO -- : Refreshing Gem list
+config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+
+  * development - set it to false
+  * test - set it to false (unless you use a tool that preloads your test environment)
+  * production - set it to true
+
+F, [2016-12-08T09:59:09.598530 #5934] FATAL -- : error adding listener addr=/home/krishna/server/active-model-serializers-example-master/releases/20161207111159/active-model-serializers-example-master/shared/sockets/unicorn.sock
+/home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `initialize': too long unix socket path (152bytes given but 108bytes max) (ArgumentError)
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `new'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `bind_listen'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:231:in `listen'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `block in bind_new_listeners!'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `each'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `bind_new_listeners!'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:130:in `start'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+	from /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+I, [2016-12-08T10:25:25.907761 #6642]  INFO -- : Refreshing Gem list
+I, [2016-12-08T10:25:26.330780 #6642]  INFO -- : listening on addr=/home/krishna/server_files/active-model-serializers-example-master/shared/sockets/unicorn.sock fd=11
+I, [2016-12-08T10:25:26.330885 #6642]  INFO -- : worker=0 spawning...
+I, [2016-12-08T10:25:26.331860 #6642]  INFO -- : worker=1 spawning...
+I, [2016-12-08T10:25:26.332355 #6645]  INFO -- : worker=0 spawned pid=6645
+I, [2016-12-08T10:25:26.332628 #6645]  INFO -- : worker=0 ready
+I, [2016-12-08T10:25:26.332987 #6642]  INFO -- : master process ready
+I, [2016-12-08T10:25:26.333544 #6648]  INFO -- : worker=1 spawned pid=6648
+I, [2016-12-08T10:25:26.333652 #6648]  INFO -- : worker=1 ready
+10.9.8.149 - - [08/Dec/2016 10:32:03] "POST /users HTTP/1.0" 200 - 0.2384
+I, [2016-12-08T10:37:07.973433 #6642]  INFO -- : reaped #<Process::Status: pid 6645 exit 0> worker=0
+I, [2016-12-08T10:37:07.973575 #6642]  INFO -- : reaped #<Process::Status: pid 6648 exit 0> worker=1
+I, [2016-12-08T10:37:07.973613 #6642]  INFO -- : master complete
+I, [2016-12-08T17:05:53.728030 #16860]  INFO -- : Refreshing Gem list
+config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+
+  * development - set it to false
+  * test - set it to false (unless you use a tool that preloads your test environment)
+  * production - set it to true
+
+I, [2016-12-08T17:05:54.140703 #16860]  INFO -- : listening on addr=/home/krishna/server/releases/20161208111932/shared/sockets/unicorn.sock fd=11
+I, [2016-12-08T17:05:54.140787 #16860]  INFO -- : worker=0 spawning...
+I, [2016-12-08T17:05:54.141686 #16860]  INFO -- : worker=1 spawning...
+I, [2016-12-08T17:05:54.142092 #16863]  INFO -- : worker=0 spawned pid=16863
+I, [2016-12-08T17:05:54.142211 #16863]  INFO -- : worker=0 ready
+I, [2016-12-08T17:05:54.142709 #16860]  INFO -- : master process ready
+I, [2016-12-08T17:05:54.143041 #16866]  INFO -- : worker=1 spawned pid=16866
+I, [2016-12-08T17:05:54.143137 #16866]  INFO -- : worker=1 ready
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:06:18.172310 #16866] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:06:18.172406 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:06:18.172420 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:06:18.172429 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:06:18.172438 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:06:18.172448 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:06:18.172459 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:06:18.172469 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:06:18.172477 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:06:18.172486 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:06:18.172495 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:06:18.172505 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:06:18.172515 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:06:20.243751 #16866] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:06:20.243802 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:06:20.243818 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:06:20.243830 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:06:20.243842 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:06:20.243851 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:06:20.243862 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:06:20.243873 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:06:20.243885 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:06:20.243896 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:06:20.243904 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:06:20.243912 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:06:20.243923 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:06:51.753716 #16863] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:06:51.753804 #16863] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:06:51.753817 #16863] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:06:51.753826 #16863] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:06:51.753837 #16863] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:06:51.753845 #16863] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:06:51.753855 #16863] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:06:51.753865 #16863] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:06:51.753877 #16863] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:06:51.753885 #16863] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:06:51.753895 #16863] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:06:51.753905 #16863] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:06:51.753914 #16863] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:06:56.761183 #16863] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:06:56.761233 #16863] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:06:56.761247 #16863] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:06:56.761259 #16863] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:06:56.761269 #16863] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:06:56.761278 #16863] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:06:56.761289 #16863] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:06:56.761299 #16863] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:06:56.761309 #16863] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:06:56.761319 #16863] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:06:56.761328 #16863] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:06:56.761335 #16863] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:06:56.761345 #16863] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:08:37.372551 #16866] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:08:37.372656 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:08:37.372698 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:08:37.372719 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:08:37.372743 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:08:37.372790 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:08:37.372809 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:08:37.372828 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:08:37.372844 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:08:37.372866 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:08:37.372887 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:08:37.372909 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:08:37.372932 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:08:46.720527 #16866] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:08:46.720630 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:08:46.720656 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:08:46.720680 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:08:46.720723 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:08:46.720742 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:08:46.720763 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:08:46.720785 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:08:46.720834 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:08:46.720852 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:08:46.720895 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:08:46.720917 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:08:46.720938 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:11:30.237395 #16866] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:11:30.237466 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:11:30.237495 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:11:30.237518 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:11:30.237540 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:11:30.237576 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:11:30.237596 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:11:30.237617 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:11:30.237638 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:11:30.237657 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:11:30.237692 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:11:30.237713 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:11:30.237733 #16866] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+I, [2016-12-08T17:11:42.554096 #16860]  INFO -- : reaped #<Process::Status: pid 16863 exit 0> worker=0
+I, [2016-12-08T17:11:42.554192 #16860]  INFO -- : reaped #<Process::Status: pid 16866 exit 0> worker=1
+I, [2016-12-08T17:11:42.554240 #16860]  INFO -- : master complete
+I, [2016-12-08T17:11:47.959983 #17172]  INFO -- : Refreshing Gem list
+config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+
+  * development - set it to false
+  * test - set it to false (unless you use a tool that preloads your test environment)
+  * production - set it to true
+
+I, [2016-12-08T17:11:48.366225 #17172]  INFO -- : unlinking existing socket=/home/krishna/server/releases/20161208111932/shared/sockets/unicorn.sock
+I, [2016-12-08T17:11:48.366344 #17172]  INFO -- : listening on addr=/home/krishna/server/releases/20161208111932/shared/sockets/unicorn.sock fd=11
+I, [2016-12-08T17:11:48.366410 #17172]  INFO -- : worker=0 spawning...
+I, [2016-12-08T17:11:48.367319 #17172]  INFO -- : worker=1 spawning...
+I, [2016-12-08T17:11:48.367782 #17175]  INFO -- : worker=0 spawned pid=17175
+I, [2016-12-08T17:11:48.367906 #17175]  INFO -- : worker=0 ready
+I, [2016-12-08T17:11:48.368378 #17172]  INFO -- : master process ready
+I, [2016-12-08T17:11:48.368705 #17178]  INFO -- : worker=1 spawned pid=17178
+I, [2016-12-08T17:11:48.368784 #17178]  INFO -- : worker=1 ready
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:11:50.561412 #17178] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:11:50.561470 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:11:50.561485 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:11:50.561496 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:11:50.561508 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:11:50.561523 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:11:50.561534 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:11:50.561545 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:11:50.561556 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:11:50.561566 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:11:50.561576 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:11:50.561584 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:11:50.561595 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:11:52.195941 #17178] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:11:52.196008 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:11:52.196034 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:11:52.196051 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:11:52.196070 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:11:52.196089 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:11:52.196106 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:11:52.196121 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:11:52.196135 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:11:52.196149 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:11:52.196167 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:11:52.196181 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:11:52.196194 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:11:58.402516 #17178] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:11:58.402595 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:11:58.402625 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:11:58.402636 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:11:58.402645 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:11:58.402677 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:11:58.402687 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:11:58.402696 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:11:58.402706 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:11:58.402717 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:11:58.402727 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:11:58.402738 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:11:58.402749 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:12:02.744514 #17178] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:12:02.744573 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:12:02.744585 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:12:02.744597 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:12:02.744621 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:12:02.744637 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:12:02.744654 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:12:02.744673 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:12:02.744699 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:12:02.744709 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:12:02.744731 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:12:02.744740 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:12:02.744747 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:12:04.258444 #17178] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:12:04.258513 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:12:04.258540 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:12:04.258561 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:12:04.258580 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:12:04.258599 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:12:04.258638 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:12:04.258662 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:12:04.258684 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:12:04.258705 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:12:04.258725 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:12:04.258744 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:12:04.258782 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:12:13.483587 #17175] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:12:13.483685 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:12:13.483708 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:12:13.483727 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:12:13.483743 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:12:13.483762 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:12:13.483783 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:12:13.483809 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:12:13.483825 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:12:13.483843 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:12:13.483859 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:12:13.483877 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:12:13.483889 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:12:25.730692 #17178] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:12:25.730842 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:12:25.730911 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:12:25.730971 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:12:25.731100 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:12:25.731143 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:12:25.731174 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:12:25.731250 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:12:25.731301 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:12:25.731336 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:12:25.731370 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:12:25.731434 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:12:25.731523 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:12:26.262797 #17178] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:12:26.262860 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:12:26.262881 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:12:26.262898 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:12:26.262914 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:12:26.262931 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:12:26.262946 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:12:26.263081 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:12:26.263097 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:12:26.263109 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:12:26.263120 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:12:26.263131 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:12:26.263143 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:14:25.550362 #17175] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:14:25.550443 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:14:25.550471 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:14:25.550495 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:14:25.550514 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:14:25.550536 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:14:25.550556 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:14:25.550584 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:14:25.550606 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:14:25.550623 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:14:25.550638 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:14:25.550665 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:14:25.550683 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:14:50.130360 #17178] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:14:50.130453 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:14:50.130497 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:14:50.130632 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:14:50.130676 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:14:50.130700 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:14:50.130722 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:14:50.130741 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:14:50.130763 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:14:50.130782 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:14:50.130914 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:14:50.130940 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:14:50.130972 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:14:51.018806 #17178] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:14:51.018879 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:14:51.018901 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:14:51.018927 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:14:51.018947 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:14:51.018960 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:14:51.018974 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:14:51.018991 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:14:51.019053 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:14:51.019077 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:14:51.019094 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:14:51.019110 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:14:51.019125 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:14:51.484942 #17178] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:14:51.485269 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:14:51.485400 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:14:51.485487 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:14:51.485600 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:14:51.485680 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:14:51.485738 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:14:51.485789 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:14:51.485846 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:14:51.485878 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:14:51.485898 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:14:51.485935 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:14:51.485976 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:14:51.643041 #17178] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:14:51.643094 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:14:51.643109 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:14:51.643121 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:14:51.643155 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:14:51.643165 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:14:51.643175 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:14:51.643183 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:14:51.643200 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:14:51.643213 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:14:51.643240 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:14:51.643248 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:14:51.643259 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:14:51.819962 #17175] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:14:51.820031 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:14:51.820076 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:14:51.820094 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:14:51.820109 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:14:51.820130 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:14:51.820150 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:14:51.820169 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:14:51.820189 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:14:51.820208 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:14:51.820228 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:14:51.820247 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:14:51.820267 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:14:51.977078 #17175] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:14:51.977284 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:14:51.977319 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:14:51.977339 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:14:51.977364 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:14:51.977388 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:14:51.977404 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:14:51.977436 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:14:51.977450 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:14:51.977472 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:14:51.977488 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:14:51.977502 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:14:51.977556 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:14:58.367311 #17175] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:14:58.367384 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:14:58.367428 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:14:58.367454 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:14:58.367477 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:14:58.367499 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:14:58.367520 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:14:58.367541 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:14:58.367583 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:14:58.367604 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:14:58.367623 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:14:58.367642 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:14:58.367668 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:14:58.530643 #17178] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:14:58.530693 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:14:58.530705 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:14:58.530714 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:14:58.530725 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:14:58.530738 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:14:58.530748 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:14:58.530784 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:14:58.530793 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:14:58.530800 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:14:58.530815 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:14:58.530827 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:14:58.530838 #17178] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:15:16.485690 #17175] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:15:16.485863 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:15:16.485888 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:15:16.485925 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:15:16.485937 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:15:16.485949 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:15:16.485963 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:15:16.485998 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:15:16.486016 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:15:16.486036 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:15:16.486118 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:15:16.486148 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:15:16.486175 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:16:42.106580 #17175] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:16:42.106705 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:16:42.106878 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:16:42.106907 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:16:42.106926 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:16:42.106945 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:16:42.106962 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:16:42.106979 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:16:42.107000 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:16:42.107025 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:16:42.107062 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:16:42.107121 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:16:42.107427 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:16:44.482190 #17175] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:16:44.482284 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:16:44.482321 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:16:44.482343 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:16:44.482360 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:16:44.482374 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:16:44.482492 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:16:44.482509 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:16:44.482524 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:16:44.482539 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:16:44.482554 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:16:44.482567 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:16:44.482584 #17175] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+I, [2016-12-08T17:18:44.460960 #17172]  INFO -- : reaped #<Process::Status: pid 17175 exit 0> worker=0
+I, [2016-12-08T17:18:44.461064 #17172]  INFO -- : reaped #<Process::Status: pid 17178 exit 0> worker=1
+I, [2016-12-08T17:18:44.461120 #17172]  INFO -- : master complete
+I, [2016-12-08T17:18:50.804050 #17513]  INFO -- : Refreshing Gem list
+config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+
+  * development - set it to false
+  * test - set it to false (unless you use a tool that preloads your test environment)
+  * production - set it to true
+
+I, [2016-12-08T17:18:51.208950 #17513]  INFO -- : unlinking existing socket=/home/krishna/server/releases/20161208111932/shared/sockets/unicorn.sock
+I, [2016-12-08T17:18:51.209064 #17513]  INFO -- : listening on addr=/home/krishna/server/releases/20161208111932/shared/sockets/unicorn.sock fd=11
+I, [2016-12-08T17:18:51.209130 #17513]  INFO -- : worker=0 spawning...
+I, [2016-12-08T17:18:51.210045 #17513]  INFO -- : worker=1 spawning...
+I, [2016-12-08T17:18:51.210451 #17516]  INFO -- : worker=0 spawned pid=17516
+I, [2016-12-08T17:18:51.210542 #17516]  INFO -- : worker=0 ready
+I, [2016-12-08T17:18:51.211001 #17513]  INFO -- : master process ready
+I, [2016-12-08T17:18:51.211360 #17519]  INFO -- : worker=1 spawned pid=17519
+I, [2016-12-08T17:18:51.211446 #17519]  INFO -- : worker=1 ready
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:19:00.026026 #17519] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:19:00.026164 #17519] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:19:00.026230 #17519] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:19:00.026282 #17519] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:19:00.026327 #17519] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:19:00.026371 #17519] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:19:00.026414 #17519] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:19:00.026459 #17519] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:19:00.026500 #17519] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:19:00.026538 #17519] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:19:00.026577 #17519] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:19:00.026612 #17519] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:19:00.026671 #17519] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from load at /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22)
+E, [2016-12-08T17:19:10.321356 #17519] ERROR -- : app error: You must set config.secret_key_base in your app's config. (RuntimeError)
+E, [2016-12-08T17:19:10.321409 #17519] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:145:in `env_config'
+E, [2016-12-08T17:19:10.321423 #17519] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/engine.rb:507:in `call'
+E, [2016-12-08T17:19:10.321434 #17519] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/railties-4.0.6/lib/rails/application.rb:97:in `call'
+E, [2016-12-08T17:19:10.321444 #17519] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+E, [2016-12-08T17:19:10.321452 #17519] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+E, [2016-12-08T17:19:10.321462 #17519] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+E, [2016-12-08T17:19:10.321471 #17519] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+E, [2016-12-08T17:19:10.321482 #17519] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+E, [2016-12-08T17:19:10.321492 #17519] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `load'
+E, [2016-12-08T17:19:10.321499 #17519] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/unicorn:22:in `<main>'
+E, [2016-12-08T17:19:10.321535 #17519] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-12-08T17:19:10.321544 #17519] ERROR -- : /home/krishna/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+I, [2016-12-08T17:20:55.576086 #17513]  INFO -- : reaped #<Process::Status: pid 17516 exit 0> worker=0
+I, [2016-12-08T17:20:55.576162 #17513]  INFO -- : reaped #<Process::Status: pid 17519 exit 0> worker=1
+I, [2016-12-08T17:20:55.576201 #17513]  INFO -- : master complete
+I, [2016-12-08T17:21:00.119462 #17699]  INFO -- : Refreshing Gem list
+I, [2016-12-08T17:21:00.543716 #17699]  INFO -- : unlinking existing socket=/home/krishna/server/releases/20161208111932/shared/sockets/unicorn.sock
+I, [2016-12-08T17:21:00.543845 #17699]  INFO -- : listening on addr=/home/krishna/server/releases/20161208111932/shared/sockets/unicorn.sock fd=11
+I, [2016-12-08T17:21:00.543944 #17699]  INFO -- : worker=0 spawning...
+I, [2016-12-08T17:21:00.544969 #17699]  INFO -- : worker=1 spawning...
+I, [2016-12-08T17:21:00.545452 #17702]  INFO -- : worker=0 spawned pid=17702
+I, [2016-12-08T17:21:00.545583 #17702]  INFO -- : worker=0 ready
+I, [2016-12-08T17:21:00.546032 #17699]  INFO -- : master process ready
+I, [2016-12-08T17:21:00.546380 #17705]  INFO -- : worker=1 spawned pid=17705
+I, [2016-12-08T17:21:00.546474 #17705]  INFO -- : worker=1 ready
+10.9.8.149 - - [08/Dec/2016 17:21:14] "POST / HTTP/1.0" 404 18025 0.1500
+10.9.8.149 - - [08/Dec/2016 17:21:16] "POST /users HTTP/1.0" 200 - 0.1436
+10.9.8.149 - - [08/Dec/2016 17:41:34] "POST /users HTTP/1.0" 200 - 0.2470
+I, [2016-12-08T18:34:44.603080 #17699]  INFO -- : reaped #<Process::Status: pid 17702 exit 0> worker=0
+I, [2016-12-08T18:34:44.634178 #17699]  INFO -- : reaped #<Process::Status: pid 17705 exit 0> worker=1
+I, [2016-12-08T18:34:44.634239 #17699]  INFO -- : master complete
+I, [2016-12-09T08:50:58.011835 #1723]  INFO -- : Refreshing Gem list
+I, [2016-12-09T08:50:58.690251 #1723]  INFO -- : unlinking existing socket=/home/krishna/server/releases/20161208111932/shared/sockets/unicorn.sock
+I, [2016-12-09T08:50:58.690360 #1723]  INFO -- : listening on addr=/home/krishna/server/releases/20161208111932/shared/sockets/unicorn.sock fd=11
+I, [2016-12-09T08:50:58.690420 #1723]  INFO -- : worker=0 spawning...
+I, [2016-12-09T08:50:58.691231 #1723]  INFO -- : worker=1 spawning...
+I, [2016-12-09T08:50:58.691570 #1727]  INFO -- : worker=0 spawned pid=1727
+I, [2016-12-09T08:50:58.691670 #1727]  INFO -- : worker=0 ready
+I, [2016-12-09T08:50:58.692055 #1723]  INFO -- : master process ready
+I, [2016-12-09T08:50:58.692393 #1730]  INFO -- : worker=1 spawned pid=1730
+I, [2016-12-09T08:50:58.692482 #1730]  INFO -- : worker=1 ready
+10.9.8.149 - - [09/Dec/2016 08:53:11] "POST /users HTTP/1.0" 200 - 1.0062
+I, [2016-12-09T17:54:37.541771 #1723]  INFO -- : reaped #<Process::Status: pid 1727 exit 0> worker=0
+I, [2016-12-09T17:54:37.541858 #1723]  INFO -- : reaped #<Process::Status: pid 1730 exit 0> worker=1
+I, [2016-12-09T17:54:37.541906 #1723]  INFO -- : master complete
+I, [2016-12-12T09:05:00.387195 #1725]  INFO -- : Refreshing Gem list
+I, [2016-12-12T09:05:03.819291 #1725]  INFO -- : unlinking existing socket=/home/krishna/server/releases/20161208111932/shared/sockets/unicorn.sock
+I, [2016-12-12T09:05:03.819408 #1725]  INFO -- : listening on addr=/home/krishna/server/releases/20161208111932/shared/sockets/unicorn.sock fd=9
+I, [2016-12-12T09:05:03.819475 #1725]  INFO -- : worker=0 spawning...
+I, [2016-12-12T09:05:03.820270 #1725]  INFO -- : worker=1 spawning...
+I, [2016-12-12T09:05:03.820622 #1877]  INFO -- : worker=0 spawned pid=1877
+I, [2016-12-12T09:05:03.820715 #1877]  INFO -- : worker=0 ready
+I, [2016-12-12T09:05:03.821661 #1725]  INFO -- : master process ready
+I, [2016-12-12T09:05:03.821974 #1880]  INFO -- : worker=1 spawned pid=1880
+I, [2016-12-12T09:05:03.822061 #1880]  INFO -- : worker=1 ready
+I, [2016-12-12T18:07:40.750000 #1725]  INFO -- : reaped #<Process::Status: pid 1877 exit 0> worker=0
+I, [2016-12-12T18:07:40.750090 #1725]  INFO -- : reaped #<Process::Status: pid 1880 exit 0> worker=1
+I, [2016-12-12T18:07:40.750134 #1725]  INFO -- : master complete
+I, [2016-12-13T09:02:02.137755 #2428]  INFO -- : Refreshing Gem list
+I, [2016-12-13T09:02:04.394469 #2428]  INFO -- : unlinking existing socket=/home/krishna/server/releases/20161208111932/shared/sockets/unicorn.sock
+I, [2016-12-13T09:02:04.394584 #2428]  INFO -- : listening on addr=/home/krishna/server/releases/20161208111932/shared/sockets/unicorn.sock fd=9
+I, [2016-12-13T09:02:04.394650 #2428]  INFO -- : worker=0 spawning...
+I, [2016-12-13T09:02:04.395492 #2428]  INFO -- : worker=1 spawning...
+I, [2016-12-13T09:02:04.395848 #2436]  INFO -- : worker=0 spawned pid=2436
+I, [2016-12-13T09:02:04.395940 #2436]  INFO -- : worker=0 ready
+I, [2016-12-13T09:02:04.396406 #2428]  INFO -- : master process ready
+I, [2016-12-13T09:02:04.396710 #2439]  INFO -- : worker=1 spawned pid=2439
+I, [2016-12-13T09:02:04.396788 #2439]  INFO -- : worker=1 ready
+127.0.0.1 - - [13/Dec/2016:14:51:42 +0530] "GET / HTTP/1.0" 200 - 0.1938
+127.0.0.1 - - [13/Dec/2016:14:51:53 +0530] "GET / HTTP/1.0" 200 - 0.0035
+127.0.0.1 - - [13/Dec/2016:14:51:56 +0530] "GET / HTTP/1.0" 200 - 0.1625
+I, [2016-12-13T17:59:45.787897 #2428]  INFO -- : reaped #<Process::Status: pid 2436 exit 0> worker=0
+I, [2016-12-13T17:59:45.787983 #2428]  INFO -- : reaped #<Process::Status: pid 2439 exit 0> worker=1
+I, [2016-12-13T17:59:45.788024 #2428]  INFO -- : master complete
+I, [2016-12-14T08:54:31.327865 #1878]  INFO -- : Refreshing Gem list
+I, [2016-12-14T08:54:34.209818 #1878]  INFO -- : unlinking existing socket=/home/krishna/server/releases/20161208111932/shared/sockets/unicorn.sock
+I, [2016-12-14T08:54:34.209945 #1878]  INFO -- : listening on addr=/home/krishna/server/releases/20161208111932/shared/sockets/unicorn.sock fd=9
+I, [2016-12-14T08:54:34.210007 #1878]  INFO -- : worker=0 spawning...
+I, [2016-12-14T08:54:34.210888 #1878]  INFO -- : worker=1 spawning...
+I, [2016-12-14T08:54:34.211276 #1888]  INFO -- : worker=0 spawned pid=1888
+I, [2016-12-14T08:54:34.211377 #1888]  INFO -- : worker=0 ready
+I, [2016-12-14T08:54:34.211680 #1878]  INFO -- : master process ready
+I, [2016-12-14T08:54:34.212022 #1891]  INFO -- : worker=1 spawned pid=1891
+I, [2016-12-14T08:54:34.212106 #1891]  INFO -- : worker=1 ready
+I, [2016-12-14T18:00:11.255068 #1878]  INFO -- : reaped #<Process::Status: pid 1888 exit 0> worker=0
+I, [2016-12-14T18:00:11.255200 #1878]  INFO -- : reaped #<Process::Status: pid 1891 exit 0> worker=1
+I, [2016-12-14T18:00:11.255264 #1878]  INFO -- : master complete
+I, [2016-12-15T09:04:44.593089 #2276]  INFO -- : Refreshing Gem list
+I, [2016-12-15T09:04:54.469946 #2276]  INFO -- : unlinking existing socket=/home/krishna/server/releases/20161208111932/shared/sockets/unicorn.sock
+I, [2016-12-15T09:04:54.470054 #2276]  INFO -- : listening on addr=/home/krishna/server/releases/20161208111932/shared/sockets/unicorn.sock fd=9
+I, [2016-12-15T09:04:54.470115 #2276]  INFO -- : worker=0 spawning...
+I, [2016-12-15T09:04:54.470944 #2276]  INFO -- : worker=1 spawning...
+I, [2016-12-15T09:04:54.471323 #2485]  INFO -- : worker=0 spawned pid=2485
+I, [2016-12-15T09:04:54.471424 #2485]  INFO -- : worker=0 ready
+I, [2016-12-15T09:04:54.471894 #2276]  INFO -- : master process ready
+I, [2016-12-15T09:04:54.472236 #2488]  INFO -- : worker=1 spawned pid=2488
+I, [2016-12-15T09:04:54.472323 #2488]  INFO -- : worker=1 ready

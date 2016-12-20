@@ -1,0 +1,151 @@
+# Logfile created on 2016-12-15 13:20:55 +0530 by logger.rb/53141
+W, [2016-12-15T14:39:09.048940 #3560]  WARN -- : DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from service at /home/krishna/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140)
+D, [2016-12-15T14:39:09.069149 #3560] DEBUG -- : 
+D, [2016-12-15T14:39:09.069284 #3560] DEBUG -- : 
+I, [2016-12-15T14:39:09.070196 #3560]  INFO -- : Started POST "/DeleteFromCart" for 127.0.0.1 at 2016-12-15 14:39:09 +0530
+D, [2016-12-15T14:39:09.797128 #3560] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (10.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+D, [2016-12-15T14:39:09.997324 #3560] DEBUG -- :   [1m[35mSession Load (28.5ms)[0m  SELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:39:10.016050 #3560] DEBUG -- :   [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1[0m  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:39:10.093264 #3560] DEBUG -- :   [1m[35mUser Load (27.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+D, [2016-12-15T14:39:10.126884 #3560] DEBUG -- :   [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1[0m  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:39:10.127738 #3560] DEBUG -- :   [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+D, [2016-12-15T14:39:10.165300 #3560] DEBUG -- :   [1m[36mCart Load (24.2ms)[0m  [1mSELECT  "carts".* FROM "carts" WHERE (user_id=1 and product_id=3)  ORDER BY "carts"."id" ASC LIMIT 1[0m
+D, [2016-12-15T14:39:10.172942 #3560] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2016-12-15T14:39:10.174817 #3560] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "carts" WHERE "carts"."id" = $1[0m  [["id", 24]]
+D, [2016-12-15T14:39:10.183680 #3560] DEBUG -- :   [1m[35m (8.2ms)[0m  COMMIT
+D, [2016-12-15T14:39:10.285546 #3560] DEBUG -- :   [1m[36mProduct Load (21.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 3]]
+D, [2016-12-15T14:39:10.295211 #3560] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2016-12-15T14:39:10.357207 #3560] DEBUG -- :   [1m[36mProduct Exists (21.4ms)[0m  [1mSELECT  1 AS one FROM "products" WHERE (LOWER("products"."name") = LOWER('Shoes') AND "products"."id" != 3) LIMIT 1[0m
+D, [2016-12-15T14:39:10.361548 #3560] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  UPDATE "products" SET "quantity" = $1, "updated_at" = $2 WHERE "products"."id" = $3  [["quantity", 2], ["updated_at", "2016-12-15 09:09:10.357908"], ["id", 3]]
+D, [2016-12-15T14:39:10.398904 #3560] DEBUG -- :   [1m[36m (36.0ms)[0m  [1mCOMMIT[0m
+D, [2016-12-15T14:39:10.410698 #3560] DEBUG -- :   [1m[35mSession Load (0.3ms)[0m  SELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:39:10.411987 #3560] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+D, [2016-12-15T14:39:15.573061 #3560] DEBUG -- : 
+D, [2016-12-15T14:39:15.573313 #3560] DEBUG -- : 
+I, [2016-12-15T14:39:15.573749 #3560]  INFO -- : Started POST "/AddToCart" for 127.0.0.1 at 2016-12-15 14:39:15 +0530
+D, [2016-12-15T14:39:15.580827 #3560] DEBUG -- :   [1m[35mSession Load (0.3ms)[0m  SELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:39:15.582458 #3560] DEBUG -- :   [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1[0m  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:39:15.584062 #3560] DEBUG -- :   [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+D, [2016-12-15T14:39:15.585885 #3560] DEBUG -- :   [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1[0m  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:39:15.587156 #3560] DEBUG -- :   [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+D, [2016-12-15T14:39:15.590260 #3560] DEBUG -- :   [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 3]]
+D, [2016-12-15T14:39:15.637108 #3560] DEBUG -- :   [1m[35mProduct Exists (0.3ms)[0m  SELECT  1 AS one FROM "products" INNER JOIN "carts" ON "products"."id" = "carts"."product_id" WHERE "carts"."user_id" = $1 LIMIT 1  [["user_id", 1]]
+D, [2016-12-15T14:39:15.638474 #3560] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-12-15T14:39:15.640691 #3560] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  INSERT INTO "carts" ("user_id", "product_id", "number_of_products") VALUES ($1, $2, $3) RETURNING "id"  [["user_id", 1], ["product_id", 3], ["number_of_products", 1]]
+D, [2016-12-15T14:39:15.702511 #3560] DEBUG -- :   [1m[36m (60.4ms)[0m  [1mCOMMIT[0m
+D, [2016-12-15T14:39:15.703248 #3560] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2016-12-15T14:39:15.706103 #3560] DEBUG -- :   [1m[36mProduct Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "products" WHERE (LOWER("products"."name") = LOWER('Shoes') AND "products"."id" != 3) LIMIT 1[0m
+D, [2016-12-15T14:39:15.708960 #3560] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  UPDATE "products" SET "quantity" = $1, "updated_at" = $2 WHERE "products"."id" = $3  [["quantity", 1], ["updated_at", "2016-12-15 09:09:15.706573"], ["id", 3]]
+D, [2016-12-15T14:39:15.768900 #3560] DEBUG -- :   [1m[36m (58.7ms)[0m  [1mCOMMIT[0m
+D, [2016-12-15T14:39:15.770142 #3560] DEBUG -- :   [1m[35mSession Load (0.3ms)[0m  SELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:39:15.771293 #3560] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+F, [2016-12-15T14:39:54.723356 #3560] FATAL -- : 
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/helpers/api_helper.rb:4:in `error_message'
+  app/controllers/users_controller.rb:65:in `rescue in add_to_cart'
+  app/controllers/users_controller.rb:53:in `add_to_cart'
+
+
+W, [2016-12-15T14:40:00.618861 #3613]  WARN -- : DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from service at /home/krishna/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140)
+D, [2016-12-15T14:40:00.620482 #3613] DEBUG -- : 
+D, [2016-12-15T14:40:00.620607 #3613] DEBUG -- : 
+I, [2016-12-15T14:40:00.621368 #3613]  INFO -- : Started POST "/AddToCart" for 127.0.0.1 at 2016-12-15 14:40:00 +0530
+D, [2016-12-15T14:40:00.845285 #3613] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+D, [2016-12-15T14:40:00.898219 #3613] DEBUG -- :   [1m[35mSession Load (0.3ms)[0m  SELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:40:00.905410 #3613] DEBUG -- :   [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1[0m  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:40:00.918697 #3613] DEBUG -- :   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+D, [2016-12-15T14:40:00.927012 #3613] DEBUG -- :   [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1[0m  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:40:00.927847 #3613] DEBUG -- :   [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+D, [2016-12-15T14:40:00.937257 #3613] DEBUG -- :   [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 3]]
+D, [2016-12-15T14:40:00.967598 #3613] DEBUG -- :   [1m[35mProduct Exists (0.3ms)[0m  SELECT  1 AS one FROM "products" INNER JOIN "carts" ON "products"."id" = "carts"."product_id" WHERE "carts"."user_id" = $1 LIMIT 1  [["user_id", 1]]
+D, [2016-12-15T14:40:00.970479 #3613] DEBUG -- :   [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" INNER JOIN "carts" ON "products"."id" = "carts"."product_id" WHERE "carts"."user_id" = $1 AND "products"."id" = $2 LIMIT 1[0m  [["user_id", 1], ["id", 3]]
+D, [2016-12-15T14:40:00.973220 #3613] DEBUG -- :   [1m[35mCart Load (0.3ms)[0m  SELECT  "carts".* FROM "carts" WHERE (user_id = 1 and product_id = 3)  ORDER BY "carts"."id" ASC LIMIT 1
+D, [2016-12-15T14:40:00.977428 #3613] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-12-15T14:40:00.981946 #3613] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  UPDATE "carts" SET "number_of_products" = $1 WHERE "carts"."id" = $2  [["number_of_products", 2], ["id", 57]]
+D, [2016-12-15T14:40:01.000144 #3613] DEBUG -- :   [1m[36m (17.4ms)[0m  [1mCOMMIT[0m
+D, [2016-12-15T14:40:01.000626 #3613] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-12-15T14:40:01.004364 #3613] DEBUG -- :   [1m[36mProduct Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "products" WHERE (LOWER("products"."name") = LOWER('Shoes') AND "products"."id" != 3) LIMIT 1[0m
+D, [2016-12-15T14:40:01.007549 #3613] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  UPDATE "products" SET "quantity" = $1, "updated_at" = $2 WHERE "products"."id" = $3  [["quantity", 0], ["updated_at", "2016-12-15 09:10:01.004947"], ["id", 3]]
+D, [2016-12-15T14:40:01.016727 #3613] DEBUG -- :   [1m[36m (8.1ms)[0m  [1mCOMMIT[0m
+D, [2016-12-15T14:40:01.017875 #3613] DEBUG -- :   [1m[35mSession Load (0.2ms)[0m  SELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:40:01.018942 #3613] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+W, [2016-12-15T14:43:14.809965 #3703]  WARN -- : DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from service at /home/krishna/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140)
+D, [2016-12-15T14:43:14.812592 #3703] DEBUG -- : 
+D, [2016-12-15T14:43:14.812715 #3703] DEBUG -- : 
+I, [2016-12-15T14:43:14.813310 #3703]  INFO -- : Started POST "/DeleteFromCart" for 127.0.0.1 at 2016-12-15 14:43:14 +0530
+D, [2016-12-15T14:43:14.940569 #3703] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+D, [2016-12-15T14:43:14.976263 #3703] DEBUG -- :   [1m[35mSession Load (0.3ms)[0m  SELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:43:14.983842 #3703] DEBUG -- :   [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1[0m  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:43:14.997366 #3703] DEBUG -- :   [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+D, [2016-12-15T14:43:15.005910 #3703] DEBUG -- :   [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1[0m  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:43:15.006770 #3703] DEBUG -- :   [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+D, [2016-12-15T14:43:15.013862 #3703] DEBUG -- :   [1m[36mCart Load (1.4ms)[0m  [1mSELECT  "carts".* FROM "carts" WHERE (user_id=1 and product_id=3)  ORDER BY "carts"."id" ASC LIMIT 1[0m
+D, [2016-12-15T14:43:15.023718 #3703] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2016-12-15T14:43:15.025657 #3703] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "carts" WHERE "carts"."id" = $1[0m  [["id", 57]]
+D, [2016-12-15T14:43:15.046833 #3703] DEBUG -- :   [1m[35m (20.6ms)[0m  COMMIT
+D, [2016-12-15T14:43:15.069146 #3703] DEBUG -- :   [1m[36mProduct Load (0.8ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 3]]
+D, [2016-12-15T14:43:15.075197 #3703] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2016-12-15T14:43:15.083612 #3703] DEBUG -- :   [1m[36mProduct Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "products" WHERE (LOWER("products"."name") = LOWER('Shoes') AND "products"."id" != 3) LIMIT 1[0m
+D, [2016-12-15T14:43:15.087779 #3703] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  UPDATE "products" SET "quantity" = $1, "updated_at" = $2 WHERE "products"."id" = $3  [["quantity", 2], ["updated_at", "2016-12-15 09:13:15.084294"], ["id", 3]]
+D, [2016-12-15T14:43:15.097453 #3703] DEBUG -- :   [1m[36m (7.9ms)[0m  [1mCOMMIT[0m
+D, [2016-12-15T14:43:15.100025 #3703] DEBUG -- :   [1m[35mSession Load (0.3ms)[0m  SELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:43:15.101395 #3703] DEBUG -- :   [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+D, [2016-12-15T14:43:16.354033 #3703] DEBUG -- : 
+D, [2016-12-15T14:43:16.354212 #3703] DEBUG -- : 
+I, [2016-12-15T14:43:16.354503 #3703]  INFO -- : Started POST "/AddToCart" for 127.0.0.1 at 2016-12-15 14:43:16 +0530
+D, [2016-12-15T14:43:16.359621 #3703] DEBUG -- :   [1m[35mSession Load (0.3ms)[0m  SELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:43:16.360668 #3703] DEBUG -- :   [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1[0m  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:43:16.362000 #3703] DEBUG -- :   [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+D, [2016-12-15T14:43:16.363172 #3703] DEBUG -- :   [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1[0m  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:43:16.363896 #3703] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+D, [2016-12-15T14:43:16.366001 #3703] DEBUG -- :   [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 3]]
+D, [2016-12-15T14:43:16.379938 #3703] DEBUG -- :   [1m[35mProduct Exists (0.3ms)[0m  SELECT  1 AS one FROM "products" INNER JOIN "carts" ON "products"."id" = "carts"."product_id" WHERE "carts"."user_id" = $1 LIMIT 1  [["user_id", 1]]
+D, [2016-12-15T14:43:16.381361 #3703] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-12-15T14:43:16.384852 #3703] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  INSERT INTO "carts" ("user_id", "product_id", "number_of_products") VALUES ($1, $2, $3) RETURNING "id"  [["user_id", 1], ["product_id", 3], ["number_of_products", 1]]
+D, [2016-12-15T14:43:16.405935 #3703] DEBUG -- :   [1m[36m (18.7ms)[0m  [1mCOMMIT[0m
+D, [2016-12-15T14:43:16.408329 #3703] DEBUG -- :   [1m[35m (1.6ms)[0m  BEGIN
+D, [2016-12-15T14:43:16.412768 #3703] DEBUG -- :   [1m[36mProduct Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "products" WHERE (LOWER("products"."name") = LOWER('Shoes') AND "products"."id" != 3) LIMIT 1[0m
+D, [2016-12-15T14:43:16.416069 #3703] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  UPDATE "products" SET "quantity" = $1, "updated_at" = $2 WHERE "products"."id" = $3  [["quantity", 1], ["updated_at", "2016-12-15 09:13:16.413502"], ["id", 3]]
+D, [2016-12-15T14:43:16.533537 #3703] DEBUG -- :   [1m[36m (116.3ms)[0m  [1mCOMMIT[0m
+D, [2016-12-15T14:43:16.534950 #3703] DEBUG -- :   [1m[35mSession Load (0.2ms)[0m  SELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:43:16.536223 #3703] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+W, [2016-12-15T14:43:41.802418 #3731]  WARN -- : DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from service at /home/krishna/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140)
+D, [2016-12-15T14:43:41.803733 #3731] DEBUG -- : 
+D, [2016-12-15T14:43:41.803783 #3731] DEBUG -- : 
+I, [2016-12-15T14:43:41.804350 #3731]  INFO -- : Started POST "/DeleteFromCart" for 127.0.0.1 at 2016-12-15 14:43:41 +0530
+D, [2016-12-15T14:43:41.914609 #3731] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+D, [2016-12-15T14:43:41.932719 #3731] DEBUG -- :   [1m[35mSession Load (0.2ms)[0m  SELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:43:41.936553 #3731] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1[0m  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:43:41.942566 #3731] DEBUG -- :   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+D, [2016-12-15T14:43:41.946380 #3731] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1[0m  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:43:41.946635 #3731] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+D, [2016-12-15T14:43:41.949599 #3731] DEBUG -- :   [1m[36mCart Load (0.4ms)[0m  [1mSELECT  "carts".* FROM "carts" WHERE (user_id=1 and product_id=3)  ORDER BY "carts"."id" ASC LIMIT 1[0m
+D, [2016-12-15T14:43:41.951946 #3731] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-12-15T14:43:41.952579 #3731] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "carts" WHERE "carts"."id" = $1[0m  [["id", 58]]
+D, [2016-12-15T14:43:41.972018 #3731] DEBUG -- :   [1m[35m (19.2ms)[0m  COMMIT
+D, [2016-12-15T14:43:41.979983 #3731] DEBUG -- :   [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 3]]
+D, [2016-12-15T14:43:41.982415 #3731] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-12-15T14:43:41.988145 #3731] DEBUG -- :   [1m[36mProduct Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "products" WHERE (LOWER("products"."name") = LOWER('Shoes') AND "products"."id" != 3) LIMIT 1[0m
+D, [2016-12-15T14:43:41.989936 #3731] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  UPDATE "products" SET "quantity" = $1, "updated_at" = $2 WHERE "products"."id" = $3  [["quantity", 2], ["updated_at", "2016-12-15 09:13:41.988340"], ["id", 3]]
+D, [2016-12-15T14:43:41.996960 #3731] DEBUG -- :   [1m[36m (6.7ms)[0m  [1mCOMMIT[0m
+D, [2016-12-15T14:43:41.998217 #3731] DEBUG -- :   [1m[35mSession Load (0.2ms)[0m  SELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:43:41.998686 #3731] DEBUG -- :   [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+D, [2016-12-15T14:43:43.877203 #3731] DEBUG -- : 
+D, [2016-12-15T14:43:43.877314 #3731] DEBUG -- : 
+I, [2016-12-15T14:43:43.877496 #3731]  INFO -- : Started POST "/AddToCart" for 127.0.0.1 at 2016-12-15 14:43:43 +0530
+D, [2016-12-15T14:43:43.879992 #3731] DEBUG -- :   [1m[35mSession Load (0.2ms)[0m  SELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:43:43.880399 #3731] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1[0m  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:43:43.880897 #3731] DEBUG -- :   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+D, [2016-12-15T14:43:43.881282 #3731] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1[0m  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:43:43.881535 #3731] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+D, [2016-12-15T14:43:43.882405 #3731] DEBUG -- :   [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 3]]
+D, [2016-12-15T14:43:43.902373 #3731] DEBUG -- :   [1m[35mProduct Exists (0.2ms)[0m  SELECT  1 AS one FROM "products" INNER JOIN "carts" ON "products"."id" = "carts"."product_id" WHERE "carts"."user_id" = $1 LIMIT 1  [["user_id", 1]]
+D, [2016-12-15T14:43:43.902782 #3731] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-12-15T14:43:43.903614 #3731] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  INSERT INTO "carts" ("user_id", "product_id", "number_of_products") VALUES ($1, $2, $3) RETURNING "id"  [["user_id", 1], ["product_id", 3], ["number_of_products", 1]]
+D, [2016-12-15T14:43:43.947916 #3731] DEBUG -- :   [1m[36m (43.9ms)[0m  [1mCOMMIT[0m
+D, [2016-12-15T14:43:43.948202 #3731] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-12-15T14:43:43.949877 #3731] DEBUG -- :   [1m[36mProduct Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "products" WHERE (LOWER("products"."name") = LOWER('Shoes') AND "products"."id" != 3) LIMIT 1[0m
+D, [2016-12-15T14:43:43.951701 #3731] DEBUG -- :   [1m[35mSQL (0.5ms)[0m  UPDATE "products" SET "quantity" = $1, "updated_at" = $2 WHERE "products"."id" = $3  [["quantity", 1], ["updated_at", "2016-12-15 09:13:43.950088"], ["id", 3]]
+D, [2016-12-15T14:43:43.956033 #3731] DEBUG -- :   [1m[36m (3.8ms)[0m  [1mCOMMIT[0m
+D, [2016-12-15T14:43:43.957082 #3731] DEBUG -- :   [1m[35mSession Load (0.3ms)[0m  SELECT  "sessions".* FROM "sessions" WHERE "sessions"."session_key" = $1 LIMIT 1  [["session_key", "KqFIL-Wu073VBrozG6gyWg"]]
+D, [2016-12-15T14:43:43.957689 #3731] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
