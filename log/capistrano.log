@@ -3283,3 +3283,206 @@ You can enable  auto-update  with:    echo rvm_autoupdate_flag=2 >> ~/.rvmrc
   INFO [b36dce98] Running /usr/bin/env echo "Branch master (at 1eb3be93cb6695b6cd5a663ff23fb76403c70eec) deployed as release 20161220041318 by krishna" >> /home/krishna/server/revisions.log as krishna@10.9.8.149
  DEBUG [b36dce98] Command: cd /home/krishna/server/releases && /usr/bin/env echo "Branch master (at 1eb3be93cb6695b6cd5a663ff23fb76403c70eec) deployed as release 20161220041318 by krishna" >> /home/krishna/server/revisions.log
   INFO [b36dce98] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-12-20 10:16:39 +0530 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [f6231ae2] Running [ -d ~/.rvm ] as krishna@10.9.8.149
+ DEBUG [f6231ae2] Command: [ -d ~/.rvm ]
+ DEBUG [f6231ae2] Finished in 0.115 seconds with exit status 0 (successful).
+ DEBUG [895662d9] Running ~/.rvm/bin/rvm version as krishna@10.9.8.149
+ DEBUG [895662d9] Command: ~/.rvm/bin/rvm version
+ DEBUG [895662d9] 	rvm 1.27.0 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [895662d9] Finished in 0.246 seconds with exit status 0 (successful).
+ DEBUG [5a002633] Running ~/.rvm/bin/rvm current as krishna@10.9.8.149
+ DEBUG [5a002633] Command: ~/.rvm/bin/rvm current
+ DEBUG [5a002633] 	ruby-2.3.0
+ DEBUG [5a002633] Finished in 0.111 seconds with exit status 0 (successful).
+ DEBUG [b4eff04e] Running ~/.rvm/bin/rvm default do ruby --version as krishna@10.9.8.149
+ DEBUG [b4eff04e] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [b4eff04e] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [b4eff04e] Finished in 0.187 seconds with exit status 0 (successful).
+  INFO [1db1ec8c] Running /usr/bin/env mkdir -p /tmp as krishna@10.9.8.149
+ DEBUG [1db1ec8c] Command: /usr/bin/env mkdir -p /tmp
+  INFO [1db1ec8c] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-active-model-serializers-example-master-staging-krishna.sh 0.0%
+  INFO Uploading /tmp/git-ssh-active-model-serializers-example-master-staging-krishna.sh 100.0%
+  INFO [8bd23d7a] Running /usr/bin/env chmod 700 /tmp/git-ssh-active-model-serializers-example-master-staging-krishna.sh as krishna@10.9.8.149
+ DEBUG [8bd23d7a] Command: /usr/bin/env chmod 700 /tmp/git-ssh-active-model-serializers-example-master-staging-krishna.sh
+  INFO [8bd23d7a] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [09634b38] Running /usr/bin/env git ls-remote --heads git@github.com:sree5136/active_model_serializer.git as krishna@10.9.8.149
+ DEBUG [09634b38] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-active-model-serializers-example-master-staging-krishna.sh" ; /usr/bin/env git ls-remote --heads git@github.com:sree5136/active_model_serializer.git )
+ DEBUG [09634b38] 	6eb190a6752949bf5fa12186157a28d54173be74	refs/heads/master
+  INFO [09634b38] Finished in 3.701 seconds with exit status 0 (successful).
+  INFO [c4189dc8] Running /usr/bin/env mkdir -p /home/krishna/server/shared /home/krishna/server/releases as krishna@10.9.8.149
+ DEBUG [c4189dc8] Command: /usr/bin/env mkdir -p /home/krishna/server/shared /home/krishna/server/releases
+  INFO [c4189dc8] Finished in 0.010 seconds with exit status 0 (successful).
+  INFO [a86aabe8] Running /usr/bin/env mkdir -p /home/krishna/server/shared/public/assets as krishna@10.9.8.149
+ DEBUG [a86aabe8] Command: /usr/bin/env mkdir -p /home/krishna/server/shared/public/assets
+  INFO [a86aabe8] Finished in 0.010 seconds with exit status 0 (successful).
+ DEBUG [a03a5cf0] Running [ -f /home/krishna/server/current/REVISION ] as krishna@10.9.8.149
+ DEBUG [a03a5cf0] Command: [ -f /home/krishna/server/current/REVISION ]
+ DEBUG [a03a5cf0] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [0dc8a2b8] Running /usr/bin/env cat /home/krishna/server/current/REVISION 2>/dev/null as krishna@10.9.8.149
+ DEBUG [0dc8a2b8] Command: /usr/bin/env cat /home/krishna/server/current/REVISION 2>/dev/null
+ DEBUG [0dc8a2b8] 	1eb3be93cb6695b6cd5a663ff23fb76403c70eec
+ DEBUG [0dc8a2b8] Finished in 0.009 seconds with exit status 0 (successful).
+ DEBUG [0ae6f093] Running [ -f /home/krishna/server/repo/HEAD ] as krishna@10.9.8.149
+ DEBUG [0ae6f093] Command: [ -f /home/krishna/server/repo/HEAD ]
+ DEBUG [0ae6f093] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/krishna/server/repo
+ DEBUG [1a79d83a] Running if test ! -d /home/krishna/server/repo; then echo "Directory does not exist '/home/krishna/server/repo'" 1>&2; false; fi as krishna@10.9.8.149
+ DEBUG [1a79d83a] Command: if test ! -d /home/krishna/server/repo; then echo "Directory does not exist '/home/krishna/server/repo'" 1>&2; false; fi
+ DEBUG [1a79d83a] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [42cc28b6] Running /usr/bin/env git remote update --prune as krishna@10.9.8.149
+ DEBUG [42cc28b6] Command: cd /home/krishna/server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-active-model-serializers-example-master-staging-krishna.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [42cc28b6] 	Fetching origin
+ DEBUG [42cc28b6] 	warning: no common commits
+ DEBUG [42cc28b6] 	From github.com:sree5136/active_model_serializer
+ + 1eb3be9...6eb190a master     -> master  (forced update)
+  INFO [42cc28b6] Finished in 4.633 seconds with exit status 0 (successful).
+ DEBUG [3d330a8c] Running if test ! -d /home/krishna/server/repo; then echo "Directory does not exist '/home/krishna/server/repo'" 1>&2; false; fi as krishna@10.9.8.149
+ DEBUG [3d330a8c] Command: if test ! -d /home/krishna/server/repo; then echo "Directory does not exist '/home/krishna/server/repo'" 1>&2; false; fi
+ DEBUG [3d330a8c] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [50438c10] Running /usr/bin/env mkdir -p /home/krishna/server/releases/20161220044644 as krishna@10.9.8.149
+ DEBUG [50438c10] Command: cd /home/krishna/server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-active-model-serializers-example-master-staging-krishna.sh" ; /usr/bin/env mkdir -p /home/krishna/server/releases/20161220044644 )
+  INFO [50438c10] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [e6398d82] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/krishna/server/releases/20161220044644 as krishna@10.9.8.149
+ DEBUG [e6398d82] Command: cd /home/krishna/server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-active-model-serializers-example-master-staging-krishna.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/krishna/server/releases/20161220044644 )
+  INFO [e6398d82] Finished in 0.016 seconds with exit status 0 (successful).
+ DEBUG [1229b93d] Running if test ! -d /home/krishna/server/repo; then echo "Directory does not exist '/home/krishna/server/repo'" 1>&2; false; fi as krishna@10.9.8.149
+ DEBUG [1229b93d] Command: if test ! -d /home/krishna/server/repo; then echo "Directory does not exist '/home/krishna/server/repo'" 1>&2; false; fi
+ DEBUG [1229b93d] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [f4f8a896] Running /usr/bin/env git rev-list --max-count=1 master as krishna@10.9.8.149
+ DEBUG [f4f8a896] Command: cd /home/krishna/server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-active-model-serializers-example-master-staging-krishna.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [f4f8a896] 	6eb190a6752949bf5fa12186157a28d54173be74
+ DEBUG [f4f8a896] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [f4182d10] Running if test ! -d /home/krishna/server/releases/20161220044644; then echo "Directory does not exist '/home/krishna/server/releases/20161220044644'" 1>&2; false; fi as krishna@10.9.8.149
+ DEBUG [f4182d10] Command: if test ! -d /home/krishna/server/releases/20161220044644; then echo "Directory does not exist '/home/krishna/server/releases/20161220044644'" 1>&2; false; fi
+ DEBUG [f4182d10] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [99eb8801] Running /usr/bin/env echo "6eb190a6752949bf5fa12186157a28d54173be74" >> REVISION as krishna@10.9.8.149
+ DEBUG [99eb8801] Command: cd /home/krishna/server/releases/20161220044644 && /usr/bin/env echo "6eb190a6752949bf5fa12186157a28d54173be74" >> REVISION
+  INFO [99eb8801] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [6aba25e0] Running /usr/bin/env mkdir -p /home/krishna/server/releases/20161220044644/public as krishna@10.9.8.149
+ DEBUG [6aba25e0] Command: /usr/bin/env mkdir -p /home/krishna/server/releases/20161220044644/public
+  INFO [6aba25e0] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [010cd9eb] Running [ -L /home/krishna/server/releases/20161220044644/public/assets ] as krishna@10.9.8.149
+ DEBUG [010cd9eb] Command: [ -L /home/krishna/server/releases/20161220044644/public/assets ]
+ DEBUG [010cd9eb] Finished in 0.003 seconds with exit status 1 (failed).
+ DEBUG [b60178ad] Running [ -d /home/krishna/server/releases/20161220044644/public/assets ] as krishna@10.9.8.149
+ DEBUG [b60178ad] Command: [ -d /home/krishna/server/releases/20161220044644/public/assets ]
+ DEBUG [b60178ad] Finished in 0.003 seconds with exit status 1 (failed).
+  INFO [cc37fad1] Running /usr/bin/env ln -s /home/krishna/server/shared/public/assets /home/krishna/server/releases/20161220044644/public/assets as krishna@10.9.8.149
+ DEBUG [cc37fad1] Command: /usr/bin/env ln -s /home/krishna/server/shared/public/assets /home/krishna/server/releases/20161220044644/public/assets
+  INFO [cc37fad1] Finished in 0.003 seconds with exit status 0 (successful).
+ DEBUG [50b19589] Running if test ! -d /home/krishna/server/releases/20161220044644; then echo "Directory does not exist '/home/krishna/server/releases/20161220044644'" 1>&2; false; fi as krishna@10.9.8.149
+ DEBUG [50b19589] Command: if test ! -d /home/krishna/server/releases/20161220044644; then echo "Directory does not exist '/home/krishna/server/releases/20161220044644'" 1>&2; false; fi
+ DEBUG [50b19589] Finished in 0.002 seconds with exit status 0 (successful).
+ DEBUG [ffb236ef] Running ~/.rvm/bin/rvm default do bundle check --path /home/krishna/server/shared/bundle as krishna@10.9.8.149
+ DEBUG [ffb236ef] Command: cd /home/krishna/server/releases/20161220044644 && ~/.rvm/bin/rvm default do bundle check --path /home/krishna/server/shared/bundle
+ DEBUG [ffb236ef] 	The git source `git://github.com/rails-api/active_model_serializers.git` uses the `git` protocol, which transmits data without encryption. Disable this warning with `bundle config git.allow_insecure true`, or switch to the `https` protocol to keep your data secure.
+ DEBUG [ffb236ef] 	git://github.com/rails-api/active_model_serializers.git (at master@95f832f) is
+not yet checked out. Run `bundle install` first.
+ DEBUG [ffb236ef] Finished in 0.521 seconds with exit status 11 (failed).
+  INFO [26e4a033] Running ~/.rvm/bin/rvm default do bundle install --path /home/krishna/server/shared/bundle --without development test --deployment --quiet as krishna@10.9.8.149
+ DEBUG [26e4a033] Command: cd /home/krishna/server/releases/20161220044644 && ~/.rvm/bin/rvm default do bundle install --path /home/krishna/server/shared/bundle --without development test --deployment --quiet
+ DEBUG [26e4a033] 	Warning, new version of rvm available '1.28.0', you are using older version '1.27.0'.
+You can disable this warning with:    echo rvm_autoupdate_flag=0 >> ~/.rvmrc
+You can enable  auto-update  with:    echo rvm_autoupdate_flag=2 >> ~/.rvmrc
+  INFO [26e4a033] Finished in 169.095 seconds with exit status 0 (successful).
+ DEBUG [7408836f] Running if test ! -d /home/krishna/server/releases/20161220044644; then echo "Directory does not exist '/home/krishna/server/releases/20161220044644'" 1>&2; false; fi as krishna@10.9.8.149
+ DEBUG [7408836f] Command: if test ! -d /home/krishna/server/releases/20161220044644; then echo "Directory does not exist '/home/krishna/server/releases/20161220044644'" 1>&2; false; fi
+ DEBUG [7408836f] Finished in 0.002 seconds with exit status 0 (successful).
+  INFO [b81f21cc] Running ~/.rvm/bin/rvm default do bundle exec rake assets:precompile as krishna@10.9.8.149
+ DEBUG [b81f21cc] Command: cd /home/krishna/server/releases/20161220044644 && ( export RAILS_ENV="staging" ; ~/.rvm/bin/rvm default do bundle exec rake assets:precompile )
+ DEBUG [b81f21cc] 	config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+
+  * development - set it to false
+  * test - set it to false (unless you use a tool that preloads your test environment)
+  * production - set it to true
+
+  INFO [b81f21cc] Finished in 1.297 seconds with exit status 0 (successful).
+ DEBUG [129546ac] Running if test ! -d /home/krishna/server/releases/20161220044644; then echo "Directory does not exist '/home/krishna/server/releases/20161220044644'" 1>&2; false; fi as krishna@10.9.8.149
+ DEBUG [129546ac] Command: if test ! -d /home/krishna/server/releases/20161220044644; then echo "Directory does not exist '/home/krishna/server/releases/20161220044644'" 1>&2; false; fi
+ DEBUG [129546ac] Finished in 0.002 seconds with exit status 0 (successful).
+  INFO [a2479bae] Running /usr/bin/env mkdir -p /home/krishna/server/releases/20161220044644/assets_manifest_backup as krishna@10.9.8.149
+ DEBUG [a2479bae] Command: cd /home/krishna/server/releases/20161220044644 && /usr/bin/env mkdir -p /home/krishna/server/releases/20161220044644/assets_manifest_backup
+  INFO [a2479bae] Finished in 0.003 seconds with exit status 0 (successful).
+ DEBUG [dace907e] Running /usr/bin/env ls /home/krishna/server/releases/20161220044644/public/assets/.sprockets-manifest* as krishna@10.9.8.149
+ DEBUG [dace907e] Command: cd /home/krishna/server/releases/20161220044644 && /usr/bin/env ls /home/krishna/server/releases/20161220044644/public/assets/.sprockets-manifest*
+ DEBUG [dace907e] 	/home/krishna/server/releases/20161220044644/public/assets/.sprockets-manifest-5afd9a52ffcffe6882d9ccc651b74c32.json
+ DEBUG [dace907e] Finished in 0.003 seconds with exit status 0 (successful).
+ DEBUG [76235e3d] Running /usr/bin/env ls /home/krishna/server/releases/20161220044644/public/assets/.sprockets-manifest* as krishna@10.9.8.149
+ DEBUG [76235e3d] Command: cd /home/krishna/server/releases/20161220044644 && /usr/bin/env ls /home/krishna/server/releases/20161220044644/public/assets/.sprockets-manifest*
+ DEBUG [76235e3d] 	/home/krishna/server/releases/20161220044644/public/assets/.sprockets-manifest-5afd9a52ffcffe6882d9ccc651b74c32.json
+ DEBUG [76235e3d] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [594cbe30] Running /usr/bin/env cp /home/krishna/server/releases/20161220044644/public/assets/.sprockets-manifest-5afd9a52ffcffe6882d9ccc651b74c32.json /home/krishna/server/releases/20161220044644/assets_manifest_backup as krishna@10.9.8.149
+ DEBUG [594cbe30] Command: cd /home/krishna/server/releases/20161220044644 && /usr/bin/env cp /home/krishna/server/releases/20161220044644/public/assets/.sprockets-manifest-5afd9a52ffcffe6882d9ccc651b74c32.json /home/krishna/server/releases/20161220044644/assets_manifest_backup
+  INFO [594cbe30] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [3f2541ef] Running if test ! -d /home/krishna/server/releases/20161220044644; then echo "Directory does not exist '/home/krishna/server/releases/20161220044644'" 1>&2; false; fi as krishna@10.9.8.149
+ DEBUG [3f2541ef] Command: if test ! -d /home/krishna/server/releases/20161220044644; then echo "Directory does not exist '/home/krishna/server/releases/20161220044644'" 1>&2; false; fi
+ DEBUG [3f2541ef] Finished in 0.002 seconds with exit status 0 (successful).
+  INFO [c802ccec] Running ~/.rvm/bin/rvm default do bundle exec rake db:migrate as krishna@10.9.8.149
+ DEBUG [c802ccec] Command: cd /home/krishna/server/releases/20161220044644 && ( export RAILS_ENV="staging" ; ~/.rvm/bin/rvm default do bundle exec rake db:migrate )
+ DEBUG [c802ccec] 	config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+
+  * development - set it to false
+  * test - set it to false (unless you use a tool that preloads your test environment)
+  * production - set it to true
+
+ DEBUG [c802ccec] 	DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /home/krishna/server/releases/20161220044644/db/migrate/20161206040336_session_store.rb:6)
+ DEBUG [c802ccec] 	DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /home/krishna/server/releases/20161220044644/db/migrate/20161208114104_create_users.rb:8)
+ DEBUG [c802ccec] 	DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /home/krishna/server/releases/20161220044644/db/migrate/20161212034745_create_products.rb:7)
+ DEBUG [c802ccec] 	== 20161206040336 SessionStore: migrating =====================================
+-- create_table(:sessions)
+   -> 0.1102s
+== 20161206040336 SessionStore: migrated (0.1103s) ============================
+
+== 20161208114104 CreateUsers: migrating ======================================
+-- create_table(:users)
+   -> 0.0715s
+== 20161208114104 CreateUsers: migrated (0.0715s) =============================
+
+== 20161212034745 CreateProducts: migrating ===================================
+-- create_table(:products)
+   -> 0.0637s
+== 20161212034745 CreateProducts: migrated (0.0637s) ==========================
+
+== 20161212044420 CreateCarts: migrating ======================================
+-- create_table(:carts)
+   -> 0.0470s
+-- add_index(:carts, [:user_id, :product_id], {:unique=>true})
+   -> 0.0334s
+== 20161212044420 CreateCarts: migrated (0.0805s) =============================
+
+== 20161212094330 AddRoleToSessions: migrating ================================
+-- add_column(:sessions, :roles, :integer, {:default=>2})
+   -> 0.1070s
+== 20161212094330 AddRoleToSessions: migrated (0.1070s) =======================
+
+== 20161216092404 CreateProfilePictures: migrating ============================
+-- create_table(:profile_pictures)
+   -> 0.0645s
+== 20161216092404 CreateProfilePictures: migrated (0.0645s) ===================
+
+  INFO [c802ccec] Finished in 2.127 seconds with exit status 0 (successful).
+  INFO [8ba13717] Running /usr/bin/env ln -s /home/krishna/server/releases/20161220044644 /home/krishna/server/releases/current as krishna@10.9.8.149
+ DEBUG [8ba13717] Command: /usr/bin/env ln -s /home/krishna/server/releases/20161220044644 /home/krishna/server/releases/current
+  INFO [8ba13717] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [57ea95ae] Running /usr/bin/env mv /home/krishna/server/releases/current /home/krishna/server as krishna@10.9.8.149
+ DEBUG [57ea95ae] Command: /usr/bin/env mv /home/krishna/server/releases/current /home/krishna/server
+  INFO [57ea95ae] Finished in 0.003 seconds with exit status 0 (successful).
+ DEBUG [d6c2949a] Running /usr/bin/env ls -x /home/krishna/server/releases as krishna@10.9.8.149
+ DEBUG [d6c2949a] Command: /usr/bin/env ls -x /home/krishna/server/releases
+ DEBUG [d6c2949a] 	20161220041318	20161220044644
+ DEBUG [d6c2949a] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO Keeping 1 of 2 deployed releases on 10.9.8.149
+  INFO [db3c1066] Running /usr/bin/env rm -rf /home/krishna/server/releases/20161220041318 as krishna@10.9.8.149
+ DEBUG [db3c1066] Command: /usr/bin/env rm -rf /home/krishna/server/releases/20161220041318
+  INFO [db3c1066] Finished in 0.007 seconds with exit status 0 (successful).
+ DEBUG [2894684a] Running if test ! -d /home/krishna/server/releases; then echo "Directory does not exist '/home/krishna/server/releases'" 1>&2; false; fi as krishna@10.9.8.149
+ DEBUG [2894684a] Command: if test ! -d /home/krishna/server/releases; then echo "Directory does not exist '/home/krishna/server/releases'" 1>&2; false; fi
+ DEBUG [2894684a] Finished in 0.002 seconds with exit status 0 (successful).
+  INFO [657ec486] Running /usr/bin/env echo "Branch master (at 6eb190a6752949bf5fa12186157a28d54173be74) deployed as release 20161220044644 by krishna" >> /home/krishna/server/revisions.log as krishna@10.9.8.149
+ DEBUG [657ec486] Command: cd /home/krishna/server/releases && /usr/bin/env echo "Branch master (at 6eb190a6752949bf5fa12186157a28d54173be74) deployed as release 20161220044644 by krishna" >> /home/krishna/server/revisions.log
+  INFO [657ec486] Finished in 0.003 seconds with exit status 0 (successful).

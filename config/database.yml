@@ -18,7 +18,7 @@ development:
 
 staging:
   adapter: postgresql
-  database: api_test_db
+  database: api_test_staging
   username: postgres
   password: 12345
   pool: 5
