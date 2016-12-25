@@ -10,8 +10,6 @@
 development:
   adapter: postgresql
   database: api_test_db
-  username: postgres
-  password: 12345
   pool: 5
   timeout: 5000
 
@@ -19,8 +17,6 @@ development:
 staging:
   adapter: postgresql
   database: api_test_staging
-  username: postgres
-  password: 12345
   pool: 5
   timeout: 5000
 
@@ -40,8 +36,6 @@ test:
 production:
    adapter: postgresql
    database: api_test_db
-   username: postgres
-   password: 12345
    pool: 5
    timeout: 5000
 
