@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c2e9a6d-031e-4a97-a4b0-ef4a4e626445" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/shopping_cart_api.iml" afterPath="$PROJECT_DIR$/.idea/shopping_cart_api.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="shopping_cart_api.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -407,12 +403,12 @@
       <workItem from="1482119581885" duration="19304000" />
       <workItem from="1482204741758" duration="2972000" />
       <workItem from="1482208740493" duration="3005000" />
-      <workItem from="1482654492890" duration="2189000" />
+      <workItem from="1482654492890" duration="2443000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50348000" />
+    <option name="totallyTimeSpent" value="50602000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="61" y="24" width="963" height="744" extended-state="6" />
