@@ -5,9 +5,9 @@ gem 'rails-api'
 
 gem 'pg'
 gem 'bcrypt', '~> 3.1.7'
-gem 'active_model_serializers', github: "rails-api/active_model_serializers"
 gem 'unicorn'
 gem 'paperclip', '~> 3.0'
+gem 'rails_12factor'
 
 group :development do
   gem 'capistrano', '~> 3.6'
